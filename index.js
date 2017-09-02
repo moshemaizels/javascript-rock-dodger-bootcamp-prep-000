@@ -125,6 +125,11 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
+  for (i = 0; i < ROCKS.length; i++) {
+   var currRock = ROCKS[i]
+   console.log(ROCKS)
+   currRock.remove()
+ }
 }
 
 function moveDodger(e) {
