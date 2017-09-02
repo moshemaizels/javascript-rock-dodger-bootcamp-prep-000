@@ -129,7 +129,7 @@ function endGame() {
    var currRock = ROCKS[i]
    //console.log(ROCKS)
    currRock.remove()
-   
+
  }
  window.removeEventListener('keydown', moveDodger)
 }
