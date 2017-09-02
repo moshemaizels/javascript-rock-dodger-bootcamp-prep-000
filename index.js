@@ -135,6 +135,10 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  if (e.which === LEFT_ARROW) {
+    e.preventDefault()
+    e.stopPropagation
+  }
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
