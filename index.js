@@ -92,6 +92,7 @@ function createRock(x) {
        rock.remove()
        ROCKS.shift()
      }
+   }
 
 
       window.requestAnimationFrame(moveRock)
