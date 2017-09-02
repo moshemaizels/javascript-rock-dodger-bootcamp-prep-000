@@ -182,8 +182,8 @@ function moveDodgerRight() {
  if (currPos >= 360  ) {
    DODGER.style.left = `${360}px`
  } else {
-   
- DODGER.style.left = `${currPos += SPEED}px`
+
+ DODGER.style.left = `${currPos += 4}px`
 
 }
 }
