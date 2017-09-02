@@ -167,7 +167,7 @@ function moveDodgerLeft() {
     DODGER.style.left = `${0}px`
   } else {
 
-  DODGER.style.left = `${currPos -= SPEED}px`
+  DODGER.style.left = `${currPos -= 4}px`
   }
 }
 
