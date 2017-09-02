@@ -92,7 +92,7 @@ function createRock(x) {
            rock.remove()
            ROCKS.shift()
          }
-window.requestAnimationFrame(moveRock)
+         window.requestAnimationFrame(moveRock)
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
@@ -108,6 +108,7 @@ window.requestAnimationFrame(moveRock)
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision
+  moveRock()
   ROCKS.push(rock)
 
   // Finally, return the rock element you've created
