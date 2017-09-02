@@ -78,6 +78,20 @@ function createRock(x) {
      * If a rock collides with the DODGER,
      * we should call endGame()
      */
+     rock.style.top = `${top += 2}px`
+         var rockPos = rock.style.top.replace('px', '')
+         rockPos = parseInt(rockPos, 10)
+         //console.log(`rock position ${rock.style.top}`)
+         if(checkCollision(rock)) {
+           endGame()
+           alert("You Lose!")
+         } else {
+
+         if (rockPos > GAME_HEIGHT) {
+           //console.log(GAME)
+           rock.remove()
+           ROCKS.shift()
+         }
 
     /**
      * Otherwise, if the rock hasn't reached the bottom of
