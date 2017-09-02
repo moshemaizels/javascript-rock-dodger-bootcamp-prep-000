@@ -185,7 +185,7 @@ function moveDodgerRight() {
 
  DODGER.style.left = `${currPos += 4}px`
 
-}
+  }
 }
 
 /**
